@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { modules, getLesson, getModule } from '@/lib/content';
-import { ArrowLeft, ArrowRight, Clock, BookOpen, Play, Copy, CheckCircle } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, BookOpen, Copy, CheckCircle } from 'lucide-react';
 
 export function generateStaticParams() {
   const paths: { module: string; lesson: string }[] = [];
@@ -47,10 +47,6 @@ export default async function LessonPage({
               <Clock className="w-4 h-4" />
               <span className="text-sm">{lesson.duration}</span>
             </div>
-            <button className="px-3 py-1.5 text-sm bg-yellow-500/10 text-yellow-500 rounded-lg hover:bg-yellow-500/20 transition flex items-center gap-2">
-              <Play className="w-4 h-4" />
-              Run Code
-            </button>
           </div>
         </div>
       </header>
