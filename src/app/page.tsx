@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { modules } from '@/lib/content';
-import { BookOpen, Zap, Code, Users, Sparkles } from 'lucide-react';
+import { BookOpen, Zap, Code, Users } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -14,10 +14,6 @@ export default function Home() {
           <nav className="flex gap-6">
             <Link href="/modules" className="text-zinc-400 hover:text-white transition">
               Modules
-            </Link>
-            <Link href="/generate" className="text-zinc-400 hover:text-white transition flex items-center gap-1">
-              <Sparkles className="w-4 h-4" />
-              Code Generator
             </Link>
             <a href="#about" className="text-zinc-400 hover:text-white transition">
               About
@@ -36,7 +32,7 @@ export default function Home() {
               Learn to build Mercury-style parallel text generation models from the ground up. 
               No prerequisites needed—just Python and curiosity.
             </p>
-            <div className="flex gap-4 justify-center flex-wrap">
+            <div className="flex gap-4 justify-center">
               <Link 
                 href="/modules/1-transformer-foundations/lesson/1-1-attention-mechanism"
                 className="px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition"
@@ -48,13 +44,6 @@ export default function Home() {
                 className="px-6 py-3 border border-zinc-700 rounded-lg hover:border-zinc-500 transition"
               >
                 Browse Modules
-              </Link>
-              <Link 
-                href="/generate"
-                className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:opacity-90 transition flex items-center gap-2"
-              >
-                <Sparkles className="w-4 h-4" />
-                AI Code Generator
               </Link>
             </div>
           </div>

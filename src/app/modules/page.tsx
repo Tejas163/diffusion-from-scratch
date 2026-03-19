@@ -1,23 +1,17 @@
 import Link from 'next/link';
 import { modules } from '@/lib/content';
-import { ArrowRight, BookOpen, Sparkles } from 'lucide-react';
+import { ArrowRight, BookOpen } from 'lucide-react';
 
 export default function ModulesPage() {
   return (
     <div className="min-h-screen">
       <header className="border-b border-zinc-800">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Link href="/" className="text-zinc-400 hover:text-white transition">
-              Home
-            </Link>
-            <span className="text-zinc-700">/</span>
-            <span>Modules</span>
-          </div>
-          <Link href="/generate" className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-semibold rounded-lg hover:opacity-90 transition">
-            <Sparkles className="w-4 h-4" />
-            AI Code Generator
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center gap-4">
+          <Link href="/" className="text-zinc-400 hover:text-white transition">
+            Home
           </Link>
+          <span className="text-zinc-700">/</span>
+          <span>Modules</span>
         </div>
       </header>
 
